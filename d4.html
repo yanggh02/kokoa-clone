@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        <title>새 계정 생성</title>
+    </head>
+    <body>
+        <h1>새 계정 생성</h1>
+        <form>
+            <div>
+                <label for="name"><strong>성명*</strong></label>
+                <input id="name" required placeholder="성명" type="text" />
+            </div>
+            </div>
+                <label for="birthd"><strong>생년월일*</strong></label>
+                <input id="birthd" required placeholder="생년월일" type="date" />
+            </div>
+            <div>
+                <label for="nick"><strong>별명*</strong></label>
+                <input id="nick" required placeholder="별명" type="text" />
+            <div>
+                <label for="id"><strong>아이디*</strong></label>
+                <input id="id" required placeholder="아이디" type="text" />
+            </div>
+            <div>
+                <label for="pw"><strong>비밀번호*</strong></label>
+                <input id="pw" required placeholder="비밀번호" minlength="10" type="password" />
+            </div>
+            <div>
+                <label for="email"><strong>이메일*</strong></label>
+                <input id="email" required placeholder="이메일" type="email" />
+            </div>
+            <div>
+            <div>
+                <label for="bar">행복도</label>
+                <input id="bar" min="1" max="5" list="barmark" type="range" />
+                <datalist id="barmark">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="fcolor">좋아하는 색</label>
+                <input id="fcolor" type="color" />
+            </div>
+            <div>
+                <input type="submit" value="완료">
+            </div>
+        </form>
+    </body>
+</html>

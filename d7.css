@@ -1,0 +1,49 @@
+html {
+  background-color: whitesmoke;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+main {
+  position: absolute;
+  top: 120px;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+}
+section > div {
+  background-color: white;
+  padding: 10px;
+  height: 480px;
+  width: 280px;
+  margin: 10px;
+}
+div div:first-child {
+  height: 20px;
+  width: 280px;
+}
+h3 + div {
+  height: 345px;
+  width: 280px;
+}
+section:first-child div:first-child div {
+  background-color: tomato;
+}
+section:first-child div:last-child div {
+  background-color: teal;
+}
+section:last-child div:first-child div {
+  background-color: burlywood;
+}
+section:last-child div:last-child div {
+  background-color: thistle;
+}

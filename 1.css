@@ -1,0 +1,12 @@
+body {
+  background-color: aquamarine;
+}
+a:visited {
+  color: goldenrod;
+}
+a:hover {
+  color: tomato;
+}
+a:focus {
+  color: tomato;
+}
