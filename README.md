@@ -1,3 +1,3 @@
 # Kokoa clone
 
-cloning KakaoTalk dsign
+카카오톡 디자인 따라하기
