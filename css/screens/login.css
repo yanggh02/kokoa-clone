@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+
+.logo-header {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-header i {
+  color: var(--blue);
+}
+.logo-header__text {
+  margin: 15px 0px 50px 0px;
+  font-family: "Days One", sans-serif;
+  font-size: 25px;
+  color: white;
+  cursor: default;
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+#login-form input:not([type="submit"]) {
+  padding: 10px;
+  border: solid rgba(255, 255, 255, 0.5) 1px;
+  border-radius: 3px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  margin-bottom: 15px;
+  transition: border-color 0.1s ease-in-out;
+}
+#login-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#login-form input:not([type="submit"]):hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+#login-form input:not([type="submit"]):focus {
+  border-color: var(--blue);
+}
+#login-form input[type="submit"] {
+  padding: 10px;
+  border: solid rgba(0, 174, 255, 0) 1px;
+  border-radius: 3px;
+  background-color: rgba(0, 174, 255, 0.7);
+  font-size: 16px;
+  color: white;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  transition: border-color 0.1s ease-in-out;
+}
+#login-form input[type="submit"]:hover,
+#login-form input[type="submit"]:focus {
+  background-color: rgba(0, 174, 255, 0.8);
+  border-color: rgba(0, 174, 255, 1);
+}
+#login-or-line {
+  text-align: center;
+  margin: 10px 25px 20px 25px;
+  border-bottom: rgba(255, 255, 255, 0.2) 0.5px solid;
+}
+#login-or-line span {
+  color: rgba(255, 255, 255, 0.5);
+  cursor: default;
+  background-color: #15171e;
+  padding: 0px 20px;
+  position: relative;
+  top: 8px;
+}
+#login-or-btn {
+  display: flex;
+  justify-content: center;
+}
+#login-or-btn a {
+  background-color: white;
+  color: black;
+  height: 45px;
+  width: 45px;
+  margin: 20px 10px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+#login-or-btn a:hover,
+#login-or-btn a:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#login-or-btn a:first-child {
+  background-color: rgba(24, 119, 242, 1);
+  color: white;
+}
+#login-or-btn a:first-child:hover,
+#login-or-btn a:first-child:focus {
+  background-color: rgba(24, 119, 242, 0.8);
+}
+#login-or-btn a:nth-child(2) {
+  color: gray;
+}
+#login-help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#login-help a {
+  text-align: center;
+  margin: 10px;
+  color: rgba(0, 174, 255, 0.8);
+  transition: color 0.2s ease-in-out;
+}
+#login-help a:hover,
+#login-help a:focus {
+  color: rgba(255, 255, 255, 1);
+}

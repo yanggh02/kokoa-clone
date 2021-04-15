@@ -4,14 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clone.net 로그인</title>
-        <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
     </head>
     <body>
         <div class="status-bar">
             <div class="status-bar__columm">
-                <span>No service</span>
+                <span>서비스 없음</span>
                 <i class="fas fa-wifi"></i>
             </div>
             <div class="status-bar__columm">
@@ -25,20 +23,20 @@
         </div>
         <header class="logo-header">
             <i class="fab fa-battle-net fa-5x"></i>
-            <hi class="logo-header__text">CLONENET</hi>
+            <h1 class="logo-header__text">CLONENET</h1>
         </header>
-        <form id="login-form">
-            <input type="text" placeholder="이메일 또는 휴대전화"/>
-            <input type="password" placeholder="비밀번호"/>
+        <form id="login-form" action="friends.html" method="get">
+            <input type="text" required placeholder="이메일 또는 휴대전화"/>
+            <input type="password" required placeholder="비밀번호"/>
             <input type="submit" value="로그인"/>
         </form>
         <div id="login-or-line">
-            <p>또는</p>
+            <span>또는</span>
         </div>
-        <div id="login-icon">
-            <div class="login-icon__btn login-icon__btn__blue"><i class="fab fa-facebook"></i></div>
-            <div class="login-icon__btn"><i class="fab fa-google"></i></div>
-            <div class="login-icon__btn"><i class="fab fa-apple"></i></div>
+        <div id="login-or-btn">
+            <a href="friends.html"><i class="fab fa-facebook"></i></a>
+            <a href="friends.html"><i class="fab fa-google"></i></a>
+            <a href="friends.html"><i class="fab fa-apple fa-lg"></i></a>
         </div>
         <div id="login-help">
             <a href="#">짭리자드 무료 회원 가입</a>
