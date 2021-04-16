@@ -3,17 +3,106 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>친구 목록 - Clone.net</title>
+        <title>Clone.net 친구</title>
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+        <main class="friends-screen">
+            <div class="friends-screen__favorites">
+                <div class="friends-screen__favorites-header">
+                    <i class="fas fa-chevron-down fa-xs"></i>
+                    <span>친한 친구 - 1/1</span>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <div class="user-component__connection">
+                            <div class="user-component__connection-online"></div>
+                        </div>
+                        <img class="user-component__avatar" src="https://wow.zamimg.com/uploads/screenshots/normal/661539-battle-net-avatars.jpg"/>
+                        <div class="user-component__text">
+                            <div class="user-component__title">
+                                <h4 class="user-component__name user-component__name__blue">알두인 린</h4>
+                                <i class="user-component__favorate fas fa-star fa-xs"></i>
+                            </div>
+                            <h6 class="user-component__subtitle">대전 모드에서 대전 중!</h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <img class="user-component__game-icon" src="hearthstone.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="friends-screen__favorites">
+                <div class="friends-screen__favorites-header">
+                    <i class="fas fa-chevron-down fa-xs"></i>
+                    <span>친구 - 1/2</span>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <div class="user-component__connection">
+                            <i class="user-component__connection-afk fas fa-clock"></i>
+                        </div>
+                        <img class="user-component__avatar" src="https://wow.zamimg.com/uploads/screenshots/normal/661494-battle-net-avatars.jpg"/>
+                        <div class="user-component__text">
+                            <div class="user-component__title">
+                                <h4 class="user-component__name user-component__name__blue">볼바르 폴드라군</h4>
+                            </div>
+                            <h6 class="user-component__subtitle">모바일</h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column"></div>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <div class="user-component__connection">
+                            <div class="user-component__connection-offline"></div>
+                        </div>
+                        <img class="user-component__avatar" src="https://wow.zamimg.com/uploads/screenshots/normal/661494-battle-net-avatars.jpg"/>
+                        <div class="user-component__text">
+                            <div class="user-component__title">
+                                <h4 class="user-component__name user-component__name__blue">실바나나스 윈드러너</h4>
+                            </div>
+                            <h6 class="user-component__subtitle">14일 동안 오프라인</h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column"></div>
+                </div>
+            </div>
+        </main>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__btn">
+                    <a class="nav__a" href="friends.html"><i class="fas fa-user fa-2x"></i></a>
+                </li>
+                <li class="nav__btn">
+                    <div class="nav__notification"></div>
+                    <a class="nav__a" href="social.html"><i class="far fa-comment-dots fa-2x"></i></a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__a" href="profile.html"><i class="far fa-user-circle fa-2x"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="screen-header">
+            <div class="screen-header__column">
+                <h1 class="screen-header__title">친구</h1>
+                <div class="screen-header__icons">
+                    <div>
+                        <i class="fas fa-search fa-lg"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-user-plus fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="status-bar">
             <div class="status-bar__columm">
                 <span>서비스 없음</span>
                 <i class="fas fa-wifi"></i>
             </div>
             <div class="status-bar__columm">
-                <span>6:43</span>
+                <span>오후 6:43</span>
             </div>
             <div class="status-bar__columm">
                 <span>110%</span>
@@ -21,19 +110,6 @@
                 <i class="fas fa-bolt"></i>
             </div>
         </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__btn">
-                    <a class="nav__a" href="friends.html"><i class="fas fa-user-friends fa-2x"></i></a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__a" href="#"><i class="far fa-comment-dots fa-2x"></i></a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__a" href="#"><i class="far fa-user-circle fa-2x"></i></a>
-                </li>
-            </ul>
-        </nav>
         <script
             src="https://kit.fontawesome.com/6478f529f2.js"
             crossorigin="anonymous"

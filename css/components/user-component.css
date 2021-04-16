@@ -1,0 +1,84 @@
+.user-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  transition: background-color 0.1s ease-in-out;
+  cursor: pointer;
+}
+.user-component:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.user-component__notification {
+  background-color: orange;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  left: -16px;
+}
+.user-component__avatar {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.user-component__connection {
+  background-color: var(--black);
+  border-radius: 50%;
+  border: var(--black) 3px solid;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+.user-component__connection-online {
+  background-color: greenyellow;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.user-component__connection-afk {
+  color: orange;
+}
+.user-component__connection-offline {
+  background-color: var(--black);
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  border: white 2px solid;
+}
+.user-component__title {
+  display: flex;
+  align-items: center;
+}
+.user-component__name {
+  font-size: 18px;
+}
+.user-component__name__blue {
+  color: rgb(120, 220, 255);
+}
+.user-component__favorate {
+  color: orange;
+  margin-left: 10px;
+}
+.user-component__subtitle {
+  margin-top: 10px;
+  font-size: 17px;
+}
+.user-component__game-icon {
+  height: 40px;
+  width: 40px;
+}
+.user-component__subtitle__chat {
+  color: rgba(255, 255, 255, 0.8);
+}
+.user-component__time {
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  margin-bottom: 30px;
+}

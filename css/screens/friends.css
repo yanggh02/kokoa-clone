@@ -1,0 +1,19 @@
+.friends-screen {
+  padding: 86px 0px 71px 0px;
+}
+.friends-screen__favorites-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 10px 15px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.friends-screen__favorites-header:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+.friends-screen__favorites-header i {
+  margin-right: 5px;
+}

@@ -1,0 +1,20 @@
+.social-screen {
+  padding: 142px 0px 71px 0px;
+}
+.chat-start-btn {
+  background-color: var(--blue);
+  display: flex;
+  height: 70px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.chat-start-btn:hover {
+  background-color: skyblue;
+}

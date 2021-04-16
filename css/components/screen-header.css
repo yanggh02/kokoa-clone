@@ -1,0 +1,60 @@
+.screen-header {
+  position: fixed;
+  top: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--black);
+}
+.screen-header__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.screen-header__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 25px;
+  cursor: default;
+}
+.screen-header__icons {
+  display: flex;
+}
+.screen-header__icons div {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.screen-header__icons div:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.screen-header__social {
+  display: flex;
+  justify-content: space-between;
+}
+.screen-header__social-btn {
+  width: 50%;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: solid rgba(255, 255, 255, 0.1) 1px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.screen-header__social-btn:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+.screen-header__social-btn__selected {
+  border-bottom: var(--blue) solid 2px;
+}
+.screen-header__social-btn__unselected {
+  color: rgba(255, 255, 255, 0.8);
+}
