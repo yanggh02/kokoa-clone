@@ -1,0 +1,25 @@
+.badge-online {
+  background-color: chartreuse;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.badge-afk {
+  color: orange;
+}
+.badge-other {
+  color: tomato;
+}
+.badge-offline {
+  background-color: var(--black);
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  border: white 2px solid;
+}
+.badge-offline-set {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  border: white 2px solid;
+}

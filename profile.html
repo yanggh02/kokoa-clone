@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clone.net 프로필</title>
+        <title>Clone.net 프로필 설정</title>
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
@@ -13,62 +13,73 @@
                 <div class="profile-avatar">
                     <img src="https://wow.zamimg.com/uploads/screenshots/normal/661494-battle-net-avatars.jpg">
                 </div>
+                <div class="profile-settings__btn">
+                    <i class="fas fa-cog fa-2x"></i>
+                </div>
                 <div class="profile-name">
                     <span>막강한바지</span>
                     <span>#31394</span>
                 </div>
                 <div class="profile-connection">
                     <div class="profile-connection__column">
-                        <div class="profile-connection__btn">
+                        <div class="profile-connection__btn__selected">
                             <div class="profile-connection__online"></div>
+                            <div class="badge-online"></div>
                         </div>
                         <span>온라인</span>
                     </div>
                     <div class="profile-connection__column">
                         <div class="profile-connection__btn">
                             <div class="profile-connection__afk"></div>
+                            <i class="badge-afk fas fa-clock"></i>
                         </div>
                         <span>자리 비움</span>
                     </div>
                     <div class="profile-connection__column">
                         <div class="profile-connection__btn">
                             <div class="profile-connection__other"></div>
+                            <i class="badge-other fas fa-minus-circle"></i>
                         </div>
                         <span>다른 용무 중</span>
                     </div>
                     <div class="profile-connection__column">
                         <div class="profile-connection__btn">
                             <div class="profile-connection__offline"></div>
+                            <div class="badge-offline-set"></div>
                         </div>
                         <span>오프라인</span>
                     </div>
                 </div>
-                <span class="profile-edit">프로필 편집</span>
+                <span class="profile-settings__edit">프로필 편집</span>
             </div>
-            <div class="profile-games">
-                <h4 class="profile-title">게임</h4>
-                <div>
-                    <span>월드 오브 워크래프트</span>
+            <div class="profile-information">
+                <h4 class="profile-information__title">게임</h4>
+                <div class="profile-information__games">
+                    <img src="wow.png"/>
+                    <h6>월드 오브 와우크래프트</h6>
                 </div>
-                <div>
-                    <span>하스스톤</span>
+                <div class="profile-information__games">
+                    <img src="hearthstone.png"/>
+                    <h6>하트스톤</h6>
                 </div>
             </div>
             <div class="profile-information">
-                <h4 class="profile-title">내 정보</h4>
-                <h6>정보</h6>
-                <h4 class="profile-title">링크</h4>
-                <h6>링크 추가</h6>
-                <h4 class="profile-title">프로필 공개 설정</h4>
-                <div>
+                <h4 class="profile-information__title">내 정보</h4>
+                <span>복제검귀 사무시</span>
+                <h4 class="profile-information__title">링크</h4>
+                <a class="profile-information__gray">소셜 미디어와 같은 외부 사이트 링크를 추가합니다.</a>
+                <h4 class="profile-information__title">프로필 공개 설정</h4>
+                <div class="profile-information__privacy">
                     <span>누가 제 프로필을 볼 수 있나요?</span>
                     <div>
+                        <i class="fas fa-globe fa-lg"></i>
                         <span>전체 공개</span>
                     </div>
                 </div>
-                <div>
+                <div class="profile-information__privacy">
                     <span>누가 제 링크를 볼 수 있나요?</span>
                     <div>
+                        <i class="fas fa-globe fa-lg"></i>
                         <span>전체 공개</span>
                     </div>
                 </div>

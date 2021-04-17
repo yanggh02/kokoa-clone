@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  padding-bottom: 71px;
 }
 .profile-screen__background {
   margin-top: -500px;
   height: 500px;
   width: 500px;
-  box-shadow: var(--blue) 0px 200px 500px -125px;
+  box-shadow: var(--blue) 0px 200px 200px -140px;
 }
 .profile-settings {
   display: flex;
@@ -16,6 +18,7 @@
   margin-top: 200px;
   background-color: var(--black);
   width: 100%;
+  box-shadow: var(--blue) 0px 200px 300px;
 }
 .profile-avatar {
   background-color: var(--black);
@@ -28,9 +31,26 @@
   width: 100px;
   border-radius: 50%;
 }
+.profile-settings__btn {
+  color: var(--blue);
+  position: absolute;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.profile-settings__btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .profile-name {
   font-size: 25px;
   margin-top: 10px;
+  cursor: default;
 }
 .profile-name span:first-child {
   color: rgb(120, 220, 255);
@@ -38,23 +58,155 @@
 .profile-connection {
   padding: 0px 25px;
   display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 15px 0px;
 }
-.profile-connection__btn {
-  background-color: rgba(255, 255, 255, 0.2);
-  height: 50px;
-  width: 50px;
+.profile-connection__btn__selected {
+  background-color: rgba(255, 255, 255, 0.15);
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  margin: 10px;
-}
-.profile-connection__column {
-  margin: 10px;
-  font-size: 14px;
+  margin: 15px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.profile-edit {
+.profile-connection__btn__selected > div:first-child {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.25;
+}
+.profile-connection__btn__selected div + div,
+.profile-connection__btn__selected div + i {
+  position: absolute;
+}
+.profile-connection__btn {
+  background-color: rgba(255, 255, 255, 0.075);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.profile-connection__btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.profile-connection__btn > div:first-child {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.profile-connection__btn:hover > div:first-child {
+  transform: scale(0.5);
+  opacity: 0.25;
+}
+.profile-connection__online {
+  background-color: chartreuse;
+}
+.profile-connection__afk {
+  background-color: orange;
+}
+.profile-connection__other {
+  background-color: tomato;
+}
+.profile-connection__offline {
+  background-color: white;
+}
+.profile-connection__btn div + div,
+.profile-connection__btn div + i {
+  position: absolute;
+  opacity: 0.5;
+}
+.profile-connection__btn:hover > div:last-child,
+.profile-connection__btn:hover > i {
+  opacity: 1;
+}
+.profile-connection__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.profile-connection__column span {
+  font-size: 15px;
+  cursor: default;
+}
+.profile-settings__edit {
   background-color: var(--blue);
   padding: 15px;
   border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 10px 0px 30px 0px;
+}
+.profile-settings__edit:hover {
+  background-color: skyblue;
+}
+.profile-information {
+  border-top: rgba(255, 255, 255, 0.1) solid 1px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 25px 30px 25px;
+  background-color: var(--black);
+}
+.profile-information__title {
+  font-size: 16px;
+  margin: 30px 0px 20px 0px;
+  cursor: default;
+}
+.profile-information__games {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.profile-information__games img {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+.profile-information__games h6 {
+  font-size: 15px;
+  cursor: default;
+}
+.profile-information span {
+  display: block;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  cursor: default;
+}
+.profile-information__gray {
+  display: block;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+  cursor: default;
+}
+.profile-information__privacy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-information__privacy div {
+  display: flex;
+  align-items: center;
+}
+.profile-information__privacy i {
+  margin-right: 10px;
+  margin-top: -20px;
 }
