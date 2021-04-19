@@ -114,6 +114,7 @@
 .screen-header__search:focus-within label {
   margin-left: 10px;
   color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
 }
 .screen-header__search:focus-within .screen-header__search__box {
   width: 100%;
