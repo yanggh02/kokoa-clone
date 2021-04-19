@@ -87,7 +87,7 @@
 }
 .screen-header__search-back {
   position: fixed;
-  left: 15px;
+  left: 10px;
   display: none;
 }
 #friend-search {
@@ -98,7 +98,7 @@
   border-radius: 35px;
   font-size: 15px;
   margin-right: -60px;
-  transition: width 0.25s ease-in, background-color 0.25s ease-in;
+  transition: width 0.25s ease-in;
   background-color: rgba(255, 255, 255, 0);
   padding: 10px 15px;
   position: fixed;
@@ -109,7 +109,7 @@
   align-items: center;
 }
 .screen-header__search:focus-within {
-  padding-left: 75px;
+  padding-left: 70px;
 }
 .screen-header__search:focus-within label {
   margin-left: 10px;
@@ -122,7 +122,6 @@
 .screen-header__search:focus-within .screen-header__search-back {
   display: flex;
 }
-.screen-header__search:focus-within .screen-header__btn:last-child,
 .screen-header__search:focus-within .screen-header__title {
   display: none;
 }
