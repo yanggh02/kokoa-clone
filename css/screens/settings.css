@@ -1,0 +1,35 @@
+.settings-screen {
+  padding-top: 95px;
+}
+.settings-setting {
+  padding: 20px 25px;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+.settings-setting:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+.settings-setting span {
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.settings-display {
+  justify-content: space-between;
+}
+.settings-display div {
+  display: flex;
+  align-items: center;
+}
+.logout-btn {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  color: var(--blue);
+  font-size: 15px;
+}
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}

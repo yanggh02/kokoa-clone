@@ -3,33 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clone.net 로그인</title>
+        <title>Clone.net 오류</title>
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body class="login-screen__body">
-        <main class="login-screen">
-            <header class="logo-header">
-                <i class="fab fa-battle-net fa-5x"></i>
-                <h1 class="logo-header__text">CLONENET</h1>
-            </header>
-            <form id="login-form" action="friends.html" method="get">
-                <input type="text" required placeholder="이메일 또는 휴대전화"/>
-                <input type="password" required placeholder="비밀번호"/>
-                <input type="submit" value="로그인"/>
-            </form>
-            <div id="login-or-line">
-                <span>또는</span>
-            </div>
-            <div id="login-or-btn">
-                <a href="friends.html"><i class="fab fa-facebook"></i></a>
-                <a href="friends.html"><i class="fab fa-google"></i></a>
-                <a href="friends.html"><i class="fab fa-apple fa-lg"></i></a>
-            </div>
-            <a class="login-help" href="not-found.html">
-                <span>짭리자드 무료 회원 가입</span>
-                <span>로그인 문제 해결</span>
-                <span>탈퇴한 계정 복구</span>
-            </a>
+    <body>
+        <main class="not-found-screen">
+            <h1 class="not-found-title">404</h1>
+            <h2 class="not-found-subtitle">페이지를 찾을 수 없습니다</h2>
+            <input class="back-btn" type="button" value="이전 페이지로 이동" onclick="history.go(-1)">
         </main>
         <div class="splash-screen">
             <div class="logo-header">

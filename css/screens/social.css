@@ -2,7 +2,7 @@
   padding: 142px 0px 71px 0px;
 }
 .chat-start-btn {
-  background-color: var(--blue);
+  background-color: rgb(0, 145, 245);
   display: flex;
   height: 70px;
   width: 70px;
@@ -14,7 +14,10 @@
   right: 25px;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
+  font-size: 20px;
+  opacity: 0;
+  animation: appearBtnAnimation 0.25s 0.5s ease-in-out forwards;
 }
 .chat-start-btn:hover {
-  background-color: skyblue;
+  background-color: var(--blue);
 }

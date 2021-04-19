@@ -1,3 +1,13 @@
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .nav {
   position: fixed;
   bottom: 0;
@@ -5,6 +15,11 @@
   background-color: #15171e;
   box-sizing: border-box;
   border-top: rgba(255, 255, 255, 0.1) solid 1px;
+  animation: appearBtnAnimation 0.25s ease-in-out forwards;
+}
+.animation-delay {
+  opacity: 0;
+  animation-delay: 1.25s;
 }
 .nav__list {
   display: flex;
@@ -29,12 +44,32 @@
 .nav__a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+@keyframes notificationAnimation {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(2);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.3);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
 .nav__notification {
   background-color: orange;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   position: relative;
-  top: 20px;
-  left: 50px;
+  bottom: 13px;
+  left: 3px;
+  margin: -2.5px;
+  animation: notificationAnimation 2s 0.5s ease-in-out infinite;
 }

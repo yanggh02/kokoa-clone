@@ -13,6 +13,9 @@
 @import "screens/friends.css";
 @import "screens/social.css";
 @import "screens/profile.css";
+@import "screens/settings.css";
+@import "screens/not-found.css";
+@import "screens/chat.css";
 
 body {
   background-color: var(--black);

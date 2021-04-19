@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clone.net 대화 - 알두인 린</title>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main class="chat-screen">
+            <div class="chat__timestamp">
+                <span>2021년 4월 19일 월요일</span>
+            </div>
+            <div class="message-row message-row--own">
+                    <div class="message__info">
+                        <span class="message__time"> 오후 6:38</span>
+                    </div>
+                    <span class="message__bubble">반가워요</span>
+                </div>
+            </div>
+            <div class="message-row">
+                <img src="https://wow.zamimg.com/uploads/screenshots/normal/661539-battle-net-avatars.jpg"/>
+                <div class="message-row__content">
+                    <div class="message__info">
+                        <span class="message__author">알두인 린</span>
+                        <span class="message__time"> 오후 6:42</span>
+                    </div>
+                    <span class="message__bubble message__bubble-top">안녕하세요!</span>
+                    <span class="message__bubble message__bubble-mid">놀랍군요!</span>
+                    <span class="message__bubble message__bubble-bot">감사합니다!</span>
+                </div>
+            </div>
+        </main>
+        <form class="reply">
+            <div class="reply__column">
+                <input type="text" placeholder="메시지를 입력하세요..."/>
+                <span>GIF</span>
+            </div>
+            <div class="reply__column">
+                <button>
+                    <i class="fas fa-location-arrow fa-lg"></i>
+                </button>
+            </div>
+        </form>
+        <header class="screen-header">
+            <div class="screen-header__column">
+                <div class="screen-header__icons">
+                    <a class="screen-header__btn" href="social.html">
+                        <i class="fas fa-arrow-left fa-lg"></i>
+                    </a>
+                    <div class="screen-header__user-component">
+                        <div class="user-component__connection">
+                            <div class="badge-online"></div>
+                        </div>
+                        <img class="user-component__avatar" src="https://wow.zamimg.com/uploads/screenshots/normal/661539-battle-net-avatars.jpg"/>
+                        <div class="user-component__text">
+                            <h4 class="user-component__name-header">알두인 린</h4>
+                            <h6 class="user-component__subtitle-header">대전 모드 중!</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen-header__btn">
+                    <i class="fas fa-ellipsis-v fa-lg"></i>
+                </div>
+            </div>
+        </header>
+        <div class="status-bar">
+            <div class="status-bar__columm">
+                <span>서비스 없음</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__columm">
+                <span>오후 6:43</span>
+            </div>
+            <div class="status-bar__columm">
+                <span>110%</span>
+                <i class="fas fa-battery-full fa-lg"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+        </div>
+        <div class="no-mobile">
+            <span>화면 너비를 줄이시면 좀 더 쾌적한 이용이 가능합니다!</span>
+        </div>
+        <script
+            src="https://kit.fontawesome.com/6478f529f2.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

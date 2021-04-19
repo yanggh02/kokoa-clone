@@ -31,6 +31,15 @@
   width: 100px;
   border-radius: 50%;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
 .profile-settings__btn {
   color: var(--blue);
   position: absolute;
@@ -46,6 +55,7 @@
 }
 .profile-settings__btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  animation: rotateCog 1s linear infinite;
 }
 .profile-name {
   font-size: 25px;
@@ -147,15 +157,15 @@
   cursor: default;
 }
 .profile-settings__edit {
-  background-color: var(--blue);
+  background-color: rgb(0, 145, 245);
   padding: 15px;
   border-radius: 5px;
   transition: background-color 0.2s ease-in-out;
-  cursor: pointer;
   margin: 10px 0px 30px 0px;
+  cursor: pointer;
 }
 .profile-settings__edit:hover {
-  background-color: skyblue;
+  background-color: var(--blue);
 }
 .profile-information {
   border-top: rgba(255, 255, 255, 0.1) solid 1px;

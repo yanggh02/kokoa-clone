@@ -50,6 +50,31 @@
   color: orange;
   margin-left: 10px;
 }
+@keyframes starBeat {
+  0% {
+    color: orange;
+    transform: scale(1);
+  }
+  20% {
+    color: white;
+    transform: scale(3);
+  }
+  40% {
+    color: orange;
+    transform: scale(1);
+  }
+  60% {
+    color: yellow;
+    transform: scale(1.5);
+  }
+  80% {
+    color: orange;
+    transform: scale(1);
+  }
+}
+.user-component:hover .user-component__favorate {
+  animation: starBeat 1s linear infinite;
+}
 .user-component__subtitle {
   margin-top: 10px;
   font-size: 17px;

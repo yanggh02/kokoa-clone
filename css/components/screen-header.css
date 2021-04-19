@@ -4,6 +4,7 @@
   width: 100%;
   box-sizing: border-box;
   background-color: var(--black);
+  padding-left: 25px;
 }
 .screen-header__column {
   display: flex;
@@ -14,13 +15,14 @@
 .screen-header__title {
   font-size: 18px;
   font-weight: 600;
-  margin-left: 25px;
   cursor: default;
 }
 .screen-header__icons {
   display: flex;
+  align-items: center;
+  margin-left: -15px;
 }
-.screen-header__icons div {
+.screen-header__btn {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -31,12 +33,13 @@
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
 }
-.screen-header__icons div:hover {
+.screen-header__btn:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
 .screen-header__social {
   display: flex;
   justify-content: space-between;
+  margin-left: -25px;
 }
 .screen-header__social-btn {
   width: 50%;
@@ -57,4 +60,77 @@
 }
 .screen-header__social-btn__unselected {
   color: rgba(255, 255, 255, 0.8);
+}
+.screen-header__user-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: scale(0.8);
+  cursor: default;
+  margin: -100% -20px;
+}
+.user-component__name-header {
+  font-size: 20px;
+  color: rgb(120, 220, 255);
+}
+.user-component__subtitle-header {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+.screen-header__search__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+}
+.screen-header__search-back {
+  position: fixed;
+  left: 15px;
+  display: none;
+}
+#friend-search {
+  color: rgba(255, 255, 255, 0);
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 35px;
+  font-size: 15px;
+  margin-right: -60px;
+  transition: width 0.25s ease-in, background-color 0.25s ease-in;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px 15px;
+  position: fixed;
+  top: -25px;
+}
+.screen-header__search__icons {
+  display: flex;
+  align-items: center;
+}
+.screen-header__search:focus-within {
+  padding-left: 75px;
+}
+.screen-header__search:focus-within label {
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.screen-header__search:focus-within .screen-header__search__box {
+  width: 100%;
+}
+.screen-header__search:focus-within .screen-header__search-back {
+  display: flex;
+}
+.screen-header__search:focus-within .screen-header__btn:last-child,
+.screen-header__search:focus-within .screen-header__title {
+  display: none;
+}
+#friend-search:focus {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: text;
+  color: white;
+  transform: none;
+  position: relative;
+  top: 0px;
 }
