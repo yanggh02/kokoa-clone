@@ -20,3 +20,10 @@
 .chat-start-btn:hover {
   background-color: var(--blue);
 }
+.new-chat-screen {
+  padding-top: 165px;
+}
+.screen-header__btn span {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}

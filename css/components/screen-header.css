@@ -135,3 +135,21 @@
   position: relative;
   top: 0px;
 }
+.screen-header__new-chat {
+  padding: 10px 50px 10px 0px;
+}
+#new-chat__search {
+  color: rgba(255, 255, 255, 1);
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  font-size: 15px;
+  margin-right: -60px;
+  transition: width 0.25s ease-in, background-color 0.25s ease-in;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+}
+#new-chat__search::placeholder {
+  color: gray;
+}
