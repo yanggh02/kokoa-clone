@@ -146,10 +146,14 @@
   border-radius: 35px;
   font-size: 15px;
   margin-right: -60px;
-  transition: width 0.25s ease-in, background-color 0.25s ease-in;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 10px 15px;
+  animation: fadeIn 0.25s linear forwards;
 }
 #new-chat__search::placeholder {
-  color: gray;
+  color: rgba(255, 255, 255, 0.8);
+}
+.screen-header__btn span {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
 }

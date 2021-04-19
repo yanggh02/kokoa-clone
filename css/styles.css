@@ -16,6 +16,7 @@
 @import "screens/settings.css";
 @import "screens/not-found.css";
 @import "screens/chat.css";
+@import "screens/new-chat.css";
 
 body {
   background-color: var(--black);

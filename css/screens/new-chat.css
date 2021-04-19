@@ -1,0 +1,15 @@
+@keyframes fadeInB {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.new-chat-screen {
+  padding-top: 165px;
+  opacity: 0;
+  animation: fadeInB 0.25s 0.5s linear forwards;
+}
